@@ -1,9 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #gridContainer{
     display: flex;
     flex-wrap: wrap;
     color:aqua;
+    height: 960px;
+    width: 1080px;
 }
-.button{
+#buttonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    color:aqua;
+    align-items: center;
+    justify-content: center;
+}
+.setbutton{
     background-color: aliceblue;
     border-style: solid;
     border-width: 2px;
@@ -12,7 +28,7 @@
 .grid{
     background-color:black;
     margin:5px;
-    flex: 1 0 5.4%;
+    flex-basis: 5.4%;
     width: 50px;
     height: 50px;
     transition: 1s;
@@ -21,7 +37,7 @@
 .gridHovered{
     background-color:white;
     margin:5px;
-    flex: 1 0 5.4%;
+    flex-basis: 5.4%;
     width: 50px;
     height: 50px;
     transition: 1s;
